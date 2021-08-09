@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+#menu button{
+font-size: 18px;
+font-weight: bold;
+
+}
+
+
+:root {
+	--rojo: #E50914;
+	--fondo: #ddac0c;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	background:   url("https://s6.gifyu.com/images/1e13f4f495fd3e859.gif");
+ 
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+.modal{
+	margin-top: 200px;
+	width: 100%;
+	
+	background: rgba(159, 168, 204, 0.8);
+	color:white; 
+	position:fixed;
+	z-index:4;
+	top:0;
+	left:0;
+	display: flex;
+	text-align: center;
+
+	animation: modal 2s 2s;
+    animation-fill-mode: forwards	;
+	visibility: hidden;
+	opacity: 0;
+}
+
+
+#y{
+	text-align: right;
+}
+.contenido{
+	margin: auto;
+	width:40%;
+	height: 80%;
+	background: url("https://s6.gifyu.com/images/1e13f4f495fd3e859.gif");
+	border-radius: 10px;
+}
+#cerrar{
+	display: none; 
+	
+}
+
+#cerrar + label {
+	
+	position: fixed; 
+	color:white;
+	font-size: 25px;
+	z-index: 50;
+	background-color: darkblue;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	border-radius: 50%;
+	right: 10px;
+	cursor: pointer;
+
+
+
+	animation: modal 2s 2s;
+	animation-fill-mode: forwards	;
+	visibility: hidden;
+	opacity: 0;
+	
+}
+.container {
+	width: 100%;
+	height: 100%;
+}
+
+#cerrar:checked + label, #cerrar:checked ~ .modal{
+	display:none;
+}
+
+@keyframes modal{
+	100%{
+		visibility: visible;
+	opacity: 1;	
+	}
+}
+#menu{
+	
+	width: 100%;
+	height: 66px;
+	background-color: var(--fondo);
+	position: fixed;
+    box-shadow: white;
+	font-weight: bold;
+	color: rgb(9, 25, 170);
+	z-index:3;
+}
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 30px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 40px;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+/*ESTILOS PARA EL BROW*/
+.dropdown-content{
+	width: 100%;
+}
+/* ---- ----- ----- Pelicula Principal ----- ----- ----- */
+.pelicula-principal {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: rgb(255, 255, 255);
+	background: linear-gradient(rgba(46, 48, 48, 0.5) 0%, rgba(0,0,0,.50) 100%), url("DERD.png");
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+	
+}
+.pelicula-principall {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: rgb(255, 255, 255);
+	background: linear-gradient(rgba(46, 48, 48, 0.5) 0%, rgba(0,0,0,.50) 100%), url("activid.png");
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+	
+}
+.pelicula-principall .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principall .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principall .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principall .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .5s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principall .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principall .boton i {
+	margin-right: 1.25em;
+}
+/*aea*/
+.pelicula-principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principal .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principal .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .5s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principal .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principal .boton i {
+	margin-right: 1.25em;
+}
+/*aeaaaa*/
+.pelicula-principalll {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: rgb(255, 255, 255);
+	background: linear-gradient(rgba(46, 48, 48, 0.5) 0%, rgba(0,0,0,.50) 100%), url("deportes.png");
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+	
+}
+.pelicula-principalll .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principalll .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principalll .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principalll .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .5s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principalll .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principalll .boton i {
+	margin-right: 1.25em;
+}
+/*aeaaaa*/
+.pelicula-principallll {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: rgb(255, 255, 255);
+	background: linear-gradient(rgba(46, 48, 48, 0.5) 0%, rgba(0,0,0,.50) 100%), url("pasaaa.png");
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+	
+}
+.pelicula-principallll .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principallll .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principallll .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principallll .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .5s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principallll .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principallll .boton i {
+	margin-right: 1.25em;
+}
+/*aeaaaa*/
+.pelicula-principa {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: rgb(255, 255, 255);
+	background: linear-gradient(rgba(46, 48, 48, 0.5) 0%, rgba(0,0,0,.50) 100%), url("aeaa.png");
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+	
+}
+.pelicula-principa .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principa .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principa .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principa .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .5s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principa .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principa .boton i {
+	margin-right: 1.25em;
+}
+/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.contenedor-titulo-controles h3 {
+	color: #fff;
+	font-size: 30px;
+	
+}
+
+.contenedor-titulo-controles .indicadores button {
+	background: #fff;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo {
+	background: red;
+}
+
+
+
+.titulo {
+	
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.subtitulo {
+	
+    margin: 0;
+
+    color: rgb(0, 0, 0);
+	text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.993);
+    display: inline;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.subtituloo {
+	
+    margin: 0;
+
+    color: rgb(105, 81, 13);
+	text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.993);
+    display: inline;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.subtitulooo {
+	
+    margin: 0;
+
+    color: rgb(34, 18, 119);
+	text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.993);
+    display: inline;
+    font-size: 37px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.sabor { 
+    color: #fff;
+    margin: 7px 0;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+    font-family: 'Dancing Script', cursive;
+    margin-top: 0;
+}
+
+.linea-division {
+    width: 80%;
+    height: 2px;
+    background-color: #86793c;
+	
+}
+/*estilos de materialize*/
+.carousel{
+    min-height: 300px;
+}
+.carousel .carousel-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    
+    width: 250px;
+    height: 320px;
+}
+.carousel .carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0; 
+    left: 0;
+	margin-bottom: 30px;
+    z-index:-1;
+    border-radius: 15px;
+}
+.carousel  .indicators .indicator-item {
+border-radius: 0;
+transform: rotate(45deg);
+z-index:-3;
+margin:0 15px;
+background-color: rgb(255, 253, 113);
+}
+
+
+/*estilos para letras de texto*/
+#ae{
+	font-size: 60px;
+	
+	color: rgb(255, 255, 255);
+	text-shadow: 2px 2px 1px rgb(10, 31, 150);
+	font-family: 'Dancing Script', cursive;
+}
+#ico{
+	font-size: 10vmin;
+}
+#tt{
+	
+    margin-bottom: 240px;
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .5s ease all;
+	font-size: 1.12em;
+	align-items: center;
+}
+#tt:hover {
+	background: #fff;
+	color: #000;
+}
+#tt i {
+	margin-right: 0.3em;}
+#turu{
+	margin-left: 10px;
+	z-index:-2;
+	}
+	#uu{
+		color:rgb(0, 0, 0);
+		text-shadow: 2px 2px 1px white;
+		font-weight: bold;
+		margin-left: 10px;
+		font-family: 'Dancing Script', cursive;
+	}
+
+#ioi{
+	margin-top: 10px;
+		width: 2vmax;	
+		height: 2vmax;
+		}
+#pepa{
+			float:left;
+			color: rgb(0, 0, 0);
+			font-weight: bold;
+		text-shadow:1px 2px 1px rgb(255, 255, 255);
+		text-align: left;
+		
+		}
+#juj
+{
+	width:"100%" ;height:"100%"
+}
+
+#footer{
+	background-color: #f1c779;
+
+    height: 100%;
+	color: rgb(255, 255, 255);
+	text-shadow: rgba(0, 0, 0, 0.7);
+}
+#foter{
+	color: rgb(0, 0, 0);
+	text-shadow:1px 2px 1px rgb(255, 255, 255);
+	
+	font-weight: bold;
+}
+#fter{
+	color: rgb(255, 255, 255);
+	
+	text-shadow:1px 2px 1px rgb(61, 34, 34);
+	
+	
+	font-weight: bold;
+}
+#imgg{
+	width: 4vmax;
+	height: 4vmax;
+	
+	text-align: right;
+ justify-content: right;
+}
+#wuu{
+	text-decoration: none;
+}
+
+/*vide */
+.video-player{
+    width: 80%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+   display: none;
+   z-index:4;
+}
+.video-playerr{
+    width: 80%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+   display: none;
+   z-index:4;
+}
+video:focus{
+   outline:none;  
+}
+.close-btn{
+    position: absolute; 
+    top: 10px; 
+    right: 30px; 
+    width: 30px;
+    cursor:pointer; 
+	
+}
+
+@media screen and (max-width: 700px){
+	#pepa{
+	font-size: 3vmax;
+}}
+@media screen and (max-width: 400px){
+	#pepa{
+	font-size: 2vmax;
+}}
+#aiaa{
+	
+ width: 200px;
+
+	
+}
+#imggg{
+	width: 40vmax;
+	height: 25vmax;
+	text-align: center;
+	justify-content: center;
+	align-items: center	;
+}
+#textt{
+	color:white;
+}
+#texttt{
+	color:white;
+}
+#div{
+	margin-left: 3.5vmax;
+	
+	margin-right:  3.5vmax;
+}
+#imm{
+	
+	width: 20vmax;
+	height: 40vmax;
+}
